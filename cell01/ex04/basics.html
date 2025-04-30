@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>&#376;Basics&#376;</title>
+		<style>
+			.nav_tab {
+				color: white;
+				text-decoration: none;
+				font-size: 30px;
+			}
+
+			.imgs {
+				display: flex; /* Turns the container into a flexbox, so its children (the .img_blocks) line up horizontally.*/
+				justify-content: center; /* Horizontally centers all the children in the container.*/
+				gap: 100px;
+			}
+
+			.img_block {
+				text-align: center;
+			}
+
+			.img_block a {
+				display: block;
+				text-decoration: none;
+				color:black;
+				margin-top: 10px;
+				margin-bottom: 100px;
+			}
+		</style>
+	</head>
+
+	<body style="background-color: #FFC0CB;">
+
+		<nav>
+			<center>
+				<a href="#" class="nav_tab">&#376;Basics&#376;</a>
+			</center>
+		</nav>
+
+		<div class="imgs">
+			<div class="img_block">
+				<img src="amazon_logo.jpg" alt="amazon_logo" width="200" height="200">
+				<a href="https://www.amazon.nl/"> Amazon</a>
+			</div>
+
+			<div class="img_block">
+				<img src="bolcom_logo.png" alt="bolcom_logo" width="200" height="200">
+				<a href="https://www.bol.com/nl/nl/">Bol.com</a>
+			</div>
+		</div>
+
+		<hr>
+
+		<p align="right"> &#169; tcakir-y 2025</p>
+	</body>
+</html>
+
+<!--
+Another solution with tables
+<!--<table align="center" text-style="none">
+		<tr>
+			<td><img src="../amazon_logo.jpg" alt="amazon_logo" width="200" height="200"></td>
+			<td><img src="../bolcom_logo.png" alt="bolcom_logo" width="200" height="200"></td>
+		</tr>
+		<tr align="center">
+			<td><a href="https://www.amazon.nl/"> Amazon</a></td>
+			<td><a href="https://www.bol.com/nl/nl/">Bol.com</a></td>
+		</tr>
+	</table>-->
