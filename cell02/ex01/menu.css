@@ -1,0 +1,55 @@
+.dropdown
+{
+	position: relative;
+	display: inline-block;
+	box-shadow: 2px 2px 5px rgb(63, 62, 62);
+	margin: auto;
+	margin-top: 20px;
+	width: 30vw;
+	background-color: cornflowerblue;
+}
+
+.dropdown button
+{
+	background-color: cornflowerblue;
+	cursor: pointer;
+	border: none;
+	padding: 10px 15px;
+
+}
+
+.dropdown_content
+{
+	display: none; /*hides dropdown until hovered on it*/
+}
+
+.dropdown a
+{
+	display: block;
+	text-decoration: none;
+	color: black;
+	padding: 10px 15px;
+}
+
+.dropdown:hover
+{
+	background-color: #fff;
+
+}
+
+.dropdown a:hover
+{
+	background-color: #fff;
+}
+
+.dropdown:hover .dropdown_content 
+{
+	display: block;
+	background-color: cornflowerblue;
+
+}
+
+.dropdown:hover button
+{
+	background-color: #fff;
+}

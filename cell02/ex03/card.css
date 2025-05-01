@@ -1,0 +1,16 @@
+.card {
+	max-width: 30%;
+	background-color: gray;
+}
+
+.pp {
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: ;
+	height: 30%;
+}
+
+.img {
+	background-image: url("../img.jpg");
+}

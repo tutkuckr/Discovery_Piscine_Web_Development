@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tutku Cakir Yilmaz</title>
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	</head>
+	<body class="bg-[#f1f8f1] text-gray-800">
+		<!-- NAVIGATION BAR -->
+		<nav class="fixed top-0 w-full bg-white shadow-lg z-10">
+			<div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+			  <!--<h1 class="text-2xl font-bold">My Resume</h1>-->
+
+				<div class="relative group">
+				<button class="text-2xl font-bold">My Resume</button>
+				<ul class="absolute top-full hidden group-hover:block bg-white shadow-md pt-1 rounded w-40 text-left">
+					<li class="hover:bg-[#f1f8f1] px-4 py-2 rounded">
+						<a href="#profile-anchor" class="hover:text-blue-600">Profile</a>
+					</li>
+					<li class="hover:bg-[#f1f8f1] px-4 py-2 rounded">
+					<a href="#experience-anchor" class="block hover:text-blue-600">Experience</a>
+					</li>
+					<li class="hover:bg-[#f1f8f1] px-4 py-2 rounded">
+					<a href="#contact-anchor" class="block hover:text-blue-600">Contact</a>
+					</li>
+				</ul>
+			</div>
+			
+			<ul class="flex space-x-6">
+				<li class="hover:bg-[#f1f8f1] rounded px-2 py-1">
+					<a href="#profile-anchor" class="hover:text-blue-600">Profile</a>
+				</li>
+				<li class="hover:bg-[#f1f8f1] rounded px-2 py-1">
+					<a href="#experience-anchor" class="hover:text-blue-600">Experience</a>
+				</li>
+				<li class="hover:bg-[#f1f8f1] rounded px-2 py-1">
+					<a href="#contact-anchor" class="hover:text-blue-600">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		  
+
+		<main class="pt-20 max-w-6xl mx-auto px-4 space-y-50">
+			<section id="profile" class="relative text-center">
+				<div class="absolute -top-20" id="profile-anchor"></div>
+				<img src="https://d2zp5xs5cp8zlg.cloudfront.net/image-79322-800.jpg" alt="Profile Photo" class="mx-auto rounded-full shadow-2xl w-32 h-32">
+				<h2 class="text-3xl font-bold mt-4">Tutku Cakir Yilmaz</h2>
+				<p class="text-xl text-gray-600">Computer Engineer | Electrical & Electronics Engineering <br> Codam Student</p>
+			</section>
+			<hr>
+
+			<section id="experience" class="relative">
+				<div class="absolute -top-20" id="experience-anchor"></div>
+				<h2 class="text-3xl font-bold mb-4">Professional Experience & Skills</h2>
+				<div class="space-y-4">
+				<div>
+					<h3 class="font-semibold">Codam Coding School</h3>
+					<p class="text-sm text-gray-600">Oct 2024 - Present</p>
+					<p>Learning C, C++</p>
+				</div>
+				<div>
+					<h3 class="font-semibold">Embedded Software Engineer - Eden A.T.</h3>
+					<p class="text-sm text-gray-600">October 2019 - June 2020</p>
+					<p>Created PCBs, programmed the sensors that are attached to the PCBs</p>
+				</div>
+				<div>
+					<h3 class="font-semibold">Skills</h3>
+					<ul class=" list-disc list-inside ml-4">
+					<li>C, C++</li>
+					<li>Linux, Unix, shell</li>
+					<li>HTML, CSS, JavaScript</li>
+					<li>PCB design </li>
+					</ul>
+				</div>
+				</div>
+			</section>
+			<hr>
+
+			<section id="contact" class="relative mb-10">
+				<div class="absolute -top-20" id="contact-anchor"></div>
+				<h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+				<p>Email: <a href="mailto:somemail@example.com" class="text-blue-600 underline">somemail@example.com</a></p>
+				<p>42 Network: <a href="https://profile.intra.42.fr/users/tcakir-y" class="text-blue-600 underline">tcakir-y</a></p>
+				<p>GitHub: <a href="https://github.com/tutkuckr" class="text-blue-600 underline">tutkuckr</a></p>
+			</section>	  
+		</main>
+	</body>
+</html>

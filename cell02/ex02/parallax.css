@@ -1,0 +1,85 @@
+body, html {
+	margin: 0; /*Removes default spacing around the page.*/
+	padding: 0;
+	height: 100%; /*Ensures the <html> and <body> elements take full height.*/
+	overflow-x: hidden; /*Prevents horizontal scrollbars from showing.*/
+	font-family: sans-serif;
+  }
+  
+  .parallax-container {
+	width: 100%; /*Just makes sure the container stretches the full width of the viewport.*/
+  }
+  
+  .parallax {
+	position: relative;
+	background-attachment: fixed; /*parallax effect, images stays fixed, content scrolls over*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; /*Keeps the image centered, streched and cropped to fill the screen.*/
+	height: 100vh; /*full-page photo*/
+
+	/*center text both horizontally and vertically*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	color: white;
+	font-size: 3rem;
+	text-shadow: 2px 2px 4px black;
+  }
+  
+  .img1 {
+	background-image: url("img1.jpg");
+  }
+  
+  .img2 {
+	background-image: url("img2.jpg");
+  }
+  
+  .separator {
+	height: 1000px;
+	background-color: pink;
+	font-size: 36px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+
+/*
+ position: relative;: This allows us to position child elements 
+ 	(like the text) absolutely relative to this block if needed.
+
+background-attachment: fixed;: This is the key to the parallax effect.
+	It means the background image stays fixed as the user scrolls, so the content scrolls over the background.
+
+background-position: center;: Centers the background image.
+
+background-repeat: no-repeat;: Prevents the image from repeating 
+	if it's smaller than the container.
+
+background-size: cover;: Makes sure the background fills the 
+	entire container, cropping if necessary.
+
+height: 100vh;: Makes each section take the full 
+	viewport height (100% of the visible screen).
+
+display: flex; align-items: center; justify-content: center;: 
+	Centers the text in the middle of the screen, both vertically and horizontally.
+
+color: white; font-size: 3rem; text-shadow: ...;: 
+	Makes the text visible on top of the image with 
+	a glow effect for better readability. 
+*/
+
+
+/*
+  Summary
+The parallax effect comes from: 
+	background-attachment: fixed.
+
+Each .parallax block acts as a full-screen 
+	image section that stays put while the page scrolls.
+
+Content like .separator scrolls normally, 
+	so you get a nice layered visual transition as you move through the page.
+  */
