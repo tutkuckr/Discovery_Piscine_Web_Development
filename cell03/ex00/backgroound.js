@@ -3,6 +3,8 @@ const random_hex_color_code = () => {
 	return '#' + n.slice(0, 6);
 } 
 
-random_hex_color_code();
+function changeBackground() {
+	document.body.style.backgroundColor = random_hex_color_code();
+}
 
 //https://www.30secondsofcode.org/js/s/random-hex-color-code/
