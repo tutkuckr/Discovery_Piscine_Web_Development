@@ -1,16 +1,80 @@
-.card {
-	max-width: 30%;
-	background-color: gray;
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: #f0f2f5;
+	font-family: Arial, sans-serif;
 }
 
-.pp {
-	position: relative;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: ;
-	height: 30%;
+.profile-card {
+	width: 250px;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+	padding: 40px;
+	text-align: center;
 }
 
-.img {
-	background-image: url("../img.jpg");
+.profile-title {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.profile-pic {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+
+.login {
+	font-weight: bold;
+}
+
+.description {
+	font-size: 14px;
+	color: #666;
+	margin-bottom: 15px;
+}
+
+.social-icons {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+.social-icons img {
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+}
+
+.contact-button {
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+/* Invisible table layout */
+.invisible-table {
+	display: table;
+	width: 100%;
+}
+
+.invisible-row {
+	 display: table-row;
+}
+
+.invisible-cell {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
 }
